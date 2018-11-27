@@ -4,10 +4,9 @@ from scrapy import Request
 
 class RecipesSpider(scrapy.Spider):
     name = "recipes"
-    #link = "www.seriouseats.com"
 
-    allowed_domains = ['seriouseats.com']
-    start_urls = ['https://www.seriouseats.com/recipes']
+    allowed_domains = ['tasty.co']
+    start_urls = ['https://tasty.co/topic/easy-dinner']
 
 
     def parse(self, response):
